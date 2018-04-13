@@ -156,6 +156,7 @@ $(document).ready(function() {
                         .attr("data-actLng", $(this).attr("data-lng"));
     $(".modal-body p").empty();
     $(".modal-body p").append(thisTrail.location+"</br>");
+    $(".modal-body p").append("Difficulty: " + thisTrail.difficulty + "<br>");
     $(".modal-body p").append("Current Condition Details: " + thisTrail.conditionDetails);
     
   });
