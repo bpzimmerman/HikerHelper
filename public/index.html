@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/united/bootstrap.min.css" rel="stylesheet" integrity="sha384-/jW88w4AK58qCyfTnqErGkTLcE+LoRhfbA68B00ca/AjGmFd+UG+fB6ryk6g6T9p"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+  <script src="assets/javascript/app.js"></script>
+  <script src="assets/javascript/user.js"></script>
+  <script src="assets/javascript/savedSearches.js"></script>
+  <title>Hiker Helper</title>
+</head>
+
+<body>
+  <section class="mainSection">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mainNavBar">
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+        <span class="navbar-brand titleNav">Hiker Helper</span>
+        <ul id="signInLink" class="navbar-nav mr-auto">
+          <!-- dynamically generated sign in link or user menu -->
+        </ul>
+      </div>
+    </nav>
+
+    <div id = "parallaxTest">
+    <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+      <div class="container">
+        <!-- <div class="titleContainer">
+          <h1 class="title">Project 2</h1>
+        </div> -->
+        <div class="search">
+          <form class="formSearch">
+            <div class="form-row align-items-center">
+              <div class="col-auto">
+                <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Location">
+              </div>
+              <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-2" id="searchButton">Search</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <form class="optionSearch">
+          <div class="row">
+            <div class="col">
+              <input type="number" step="any" class="form-control" id="search-min-lng" placeholder="Minimum Trail Length (in miles)">
+            </div>
+            <div class="col">
+              <select class="form-control" id="search-diff">
+                <option value="green">Easy</option>
+                <option value="greenBlue">Kinda Easy</option>
+                <option value="blue">Intermediate</option>
+                <option value="blueBlack">Kinda Hard</option>
+                <option value="black">Hard</option>
+                <option value="dblack">Extremely Hard</option>
+              </select>
+            </div>
+            <div class="col">
+              <input type="number" step="any" class="form-control" id="search-max-dist" placeholder="Maximum Search Radius (in miles)">
+            </div>
+          </div>
+        </form>
+      </div>
+      <ol class="carousel-indicators">
+        <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselIndicators" data-slide-to="4"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-block w-100 imagesCarousel"  id = "firstSlide"  alt="First slide"></div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-block w-100 imagesCarousel" id = "secondSlide"   alt="Second slide"></div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-block w-100 imagesCarousel" id = "thirdSlide"   alt="Third slide"></div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-block w-100 imagesCarousel" id = "fourthSlide"   alt="Fourth slide"></div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-block w-100 imagesCarousel" id = "fifthSlide"   alt="Fifth slide"></div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+
+  </section>
+  <div id="hikingDiv">
+
+  </div>
+
+  <!-- Modal content-->
+  <div class="modal" id="moreInfo-Modal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="content-title">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="">
+          <p>Modal body text goes here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" id="save-act" data-dismiss="modal" aria-label="Save Activity">
+            <span aria-hidden="true">Save Activity</span>
+          </button>
+          <button type="button" class="btn btn-primary" id = "bookTrip" data-dismiss="modal" aria-label="Save Activity">
+            <span aria-hidden="true">Book Trip (Find airport)</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- sign in modal -->
+  <div class="modal" id="signIn-Modal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id = "signIn-Modal-title">Sign In</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="form" action="#">
+            <div class="form-group">
+              <label for="login-email">Email address</label>
+              <input type="email" class="form-control" id="login-email" aria-describedby="emailHelp" placeholder="Enter email" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+            </div>
+            <div class="form-group">
+              <label for="login-pass">Password</label>
+              <input type="password" class="form-control" id="login-pass" placeholder="Password" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACIUlEQVQ4EX2TOYhTURSG87IMihDsjGghBhFBmHFDHLWwSqcikk4RRKJgk0KL7C8bMpWpZtIqNkEUl1ZCgs0wOo0SxiLMDApWlgOPrH7/5b2QkYwX7jvn/uc//zl3edZ4PPbNGvF4fC4ajR5VrNvt/mo0Gr1ZPOtfgWw2e9Lv9+chX7cs64CS4Oxg3o9GI7tUKv0Q5o1dAiTfCgQCLwnOkfQOu+oSLyJ2A783HA7vIPLGxX0TgVwud4HKn0nc7Pf7N6vV6oZHkkX8FPG3uMfgXC0Wi2vCg/poUKGGcagQI3k7k8mcp5slcGswGDwpl8tfwGJg3xB6Dvey8vz6oH4C3iXcFYjbwiDeo1KafafkC3NjK7iL5ESFGQEUF7Sg+ifZdDp9GnMF/KGmfBdT2HCwZ7TwtrBPC7rQaav6Iv48rqZwg+F+p8hOMBj0IbxfMdMBrW5pAVGV/ztINByENkU0t5BIJEKRSOQ3Aj+Z57iFs1R5NK3EQS6HQqF1zmQdzpFWq3W42WwOTAf1er1PF2USFlC+qxMvFAr3HcexWX+QX6lUvsKpkTyPSEXJkw6MQ4S38Ljdbi8rmM/nY+CvgNcQqdH6U/xrYK9t244jZv6ByUOSiDdIfgBZ12U6dHEHu9TpdIr8F0OP692CtzaW/a6y3y0Wx5kbFHvGuXzkgf0xhKnPzA4UTyaTB8Ph8AvcHi3fnsrZ7Wore02YViqVOrRXXPhfqP8j6MYlawoAAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+              <div class="invalid-feedback">
+                We could not find your account. Check your e-mail and/or password or Create Account.
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" id="login">Sign In</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#signUp-Modal">Create Account</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- create account modal -->
+  <div class="modal" id="signUp-Modal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Sign Up</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="formSign">
+            <div class="form-group">
+              <label for="user-name" class="control-label">Name</label>
+              <input type="text" class="form-control" id="user-name" placeholder="Name" required>
+              <div class="invalid-feedback" id="name-invalid">
+                Please enter an alphanumeric (no special characters) display name that is at least 3 characters long.
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="user-email" class="control-label">Email</label>
+              <input type="email" class="form-control" id="user-email" placeholder="Email" data-error="Please enter a valid email address."
+                required>
+              <div class="help-block with-errors"></div>
+              <div class="invalid-feedback" id="email-invalid">
+                Please enter a valid email address.
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="user-pass" class="control-label">Password</label>
+              <div class="row">
+                <div class="form-group col-sm-6">
+                  <input type="password" data-minlength="6" class="form-control" id="user-pass" placeholder="Password" required>
+                  <div class="help-block">Minimum of 6 characters</div>
+                  <div class="invalid-feedback">
+                    Please enter a password that is at least 6 characters long.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button id="signup" type="submit" class="btn btn-primary">Sign Up</button>
+          </form>
+        </div>
+        <!-- <div class="modal-footer"> -->
+          <!-- <button id="signup" type="submit" class="btn btn-primary">Sign Up</button> -->
+        <!-- </div> -->
+      <!-- </form> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="card-footer text-white bg-primary footer">
+    <p class="footer-text"> &copy; 2018 by Group Name. All rights reserved. </p>
+  </div>
+
+</body>
+
+</html>

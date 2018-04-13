@@ -1,0 +1,237 @@
+
+body{
+    background-color: #ffdcc5;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mainSection,
+.signInUpSection{
+    height: 93vh;
+}
+
+.mainNavBar,
+#footer{height: 7vh;}
+
+#signInLink{
+position: absolute;
+right: 3%;
+}
+
+.containerTitle{
+    height:20%;
+    width: 40%; 
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    z-index: 99;
+    text-align: center;
+    }
+
+.title{
+    margin-top: 10%;
+    color: rgb(218,93,52);
+    font-size: 450%;
+    /* text-shadow: 2px 2px white; */
+}
+
+.containerSearch{
+    height: 40%;
+    width: 60%;
+    background-color: rgba(212, 210, 210, 0.623);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+
+.formSearch{
+    height: 15%;
+    position: absolute; 
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    z-index: 99;
+} 
+
+/* #locInput{margin-left: 20%;} */
+
+
+.optionSearch{
+    position: absolute;
+    width:90%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    margin-top: 10%;
+}
+
+.imagesCarousel{
+   height: 86vh;
+   opacity: 1;
+   
+}
+#firstSlide,#secondSlide,#thirdSlide{
+    background-attachment: fixed;
+    background-size: 100%;
+
+}   
+#firstSlide{
+    background-image: url("../../assets/images/Artboard 1@3x.png");
+    /* https://demo.tagdiv.com/newsmag/wp-content/uploads/2014/08/70.jpg */
+    /* ../../assets/images/backpack-clouds-cloudy-sky-771079.jpg */
+    background-size: 100%;
+
+}
+#secondSlide{
+background-image: url("../../assets/images/action-adult-adventure-701016.jpg");
+background-size: 100%;
+}
+#thirdSlide{
+    background-image: url("../../assets/images/accomplishment-adult-adventure-372098.jpg");
+    background-size: 100%;
+}
+
+#fourthSlide{
+    background-image: url("../../assets/images/backpack-clouds-cloudy-sky-771079.jpg");
+    background-size: 100%;
+}
+
+#fifthSlide{
+    background-image: url("../../assets/images/adventure-calm-clouds-414171.jpg");
+    background-size: 100%;
+
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    clear: both; 
+    margin-top: 10px;
+}
+
+.footer-text{
+    text-align: center;
+    font-size: 90%;
+}
+
+#hikingDiv{   
+    margin: 30px 30px 95px 30px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.trails{
+    width: 275px;
+    height: 325px;
+    margin: 30px;
+    padding: 10px;
+    float: left;
+    border-radius: 0.3rem;
+    border-color: #da5d34 !important;
+    border-width: thick;
+    border-top-style: ridge;
+    border-style: dashed;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform .25s;
+    cursor: pointer;
+    background-color: white;
+    text-align: center;
+    margin: 0px 30px 75px 30px;
+}
+
+.trails:hover{
+    color:#da5d34;
+    transform: scale(1.15);
+    
+}
+
+.trails img {
+    height: 180px;
+    width: 240px;
+    text-align: center;
+    border-radius: 0.3rem;
+    border: 5px;
+    border-color: #da5d34;
+    border-style: solid;
+}
+
+.saves {
+    list-style-type: none;
+}
+
+.jq-ry-container {
+    float: right;
+    margin-top: 5px;
+}
+
+/* Sign In/Up Section  */
+
+.signInUpSection{
+   background-color: rgba(207, 204, 204, 0.548);
+}
+
+.titleNav{
+    position: absolute;
+    left: 47%;
+}
+
+.mainDiv{
+    background-image: url("../images/adventure-calm-clouds-414171.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80%;
+    padding: 0;
+}
+
+.containerForm{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.781);
+    height: 100%;
+    width: 50%;
+    border: 1px solid rgba(207, 204, 204, 0.548);
+}
+
+.divider{
+    width: 70%;
+    background-color: #da5d34;
+}
+
+#signInForm{
+   padding: 10%;
+}
+
+#btnDiv{
+    position: relative;
+    padding-right: 10%;
+}
+
+#add{
+    padding: 2% 10% 5% 10%;
+}
+
+#textSign{
+    padding: 10% 10% 2% 10%;
+}
+
+#submitSignUp{
+    margin: 0;
+}
+
+
+.modal-body img{
+    border-radius: 0.3rem;
+}
+
+.modal-body{
+    box-shadow: #E95420;
+}

@@ -1,0 +1,21 @@
+{
+  "name": "travel",
+  "version": "1.0.0",
+  "description": "A log to search for and save travel information.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "mysql2": "^1.5.3",
+    "request": "^2.85.0",
+    "sequelize": "^4.37.5"
+  }
+}
