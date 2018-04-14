@@ -10,6 +10,12 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
 .mainSection,
 .signInUpSection{
     height: 93vh;

@@ -23,6 +23,7 @@ $(document).ready(function(){
       var listItem = $("<li>");
       listItem.attr("data-lat", data.latitude)
               .attr("data-lng", data.longitude)
+              .attr("class", "clearfix")
               .text(address + " ");
       var delSearchBttn = $("<button>");
       delSearchBttn.attr("class", "btn btn-primary del")
@@ -39,10 +40,10 @@ $(document).ready(function(){
       var rateSpan;
       if (data.Activities.length > 0){
         subList = $("<li>");
-        subList.attr("class", "saves");
+        subList.attr("class", "saves clearfix");
         data.Activities.forEach(function(item){
           actDiv = $("<div>");
-          actDiv.attr("class", "trails")
+          actDiv.attr("class", "trails clearfix")
                 .attr("data-actNum", item.activityNum)
                 .attr("data-actName", item.name)
                 .attr("data-actDiff", item.difficulty)
