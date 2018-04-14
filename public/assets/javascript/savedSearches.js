@@ -38,6 +38,8 @@ $(document).ready(function(){
       var actH;
       var actP;
       var rateSpan;
+      var difficulty;
+      var hikeDiff = { green: "Easy", greenBlue: "Kinda Easy", blue: "Intermediate", blueBlack: "Kinda Hard", black: "Hard", dblack: "Very Hard" };
       if (data.Activities.length > 0){
         subList = $("<li>");
         subList.attr("class", "saves clearfix");
@@ -62,7 +64,8 @@ $(document).ready(function(){
             starWidth: "12px"
           });
           actP = $("<p>");
-          actP.text(`Difficulty: ${item.difficulty}`);
+          difficulty = hikeDiff[item.difficulty];
+          actP.text(`Difficulty: ${difficulty}`);
           actP.append(rateSpan);
           delActBttn = $("<button>");
           delActBttn.attr("class", "btn btn-sm btn-primary del")
