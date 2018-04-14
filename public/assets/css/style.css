@@ -1,6 +1,9 @@
 
 body{
     background-color: #ffdcc5;
+    background-image: url("../images/mountain.png");
+    background-position-y: bottom;
+    background-repeat: no-repeat;
 }
 
 *{
@@ -76,24 +79,25 @@ right: 3%;
    opacity: 1;
    
 }
-#firstSlide,#secondSlide,#thirdSlide{
+#firstSlide,#secondSlide,#thirdSlide,#fourthSlide,#fifthSlide{
     background-attachment: fixed;
     background-size: 100%;
+    background-repeat: no-repeat;
 
 }   
 #firstSlide{
-    background-image: url("../../assets/images/Artboard 1@3x.png");
+    background-image: url("../../assets/images/action-adult-adventure-701016.jpg");
     /* https://demo.tagdiv.com/newsmag/wp-content/uploads/2014/08/70.jpg */
     /* ../../assets/images/backpack-clouds-cloudy-sky-771079.jpg */
     background-size: 100%;
 
 }
 #secondSlide{
-background-image: url("../../assets/images/action-adult-adventure-701016.jpg");
+background-image: url("../../assets/images/accomplishment-adult-adventure-372098.jpg");
 background-size: 100%;
 }
 #thirdSlide{
-    background-image: url("../../assets/images/accomplishment-adult-adventure-372098.jpg");
+    background-image: url("../../assets/images/header-hiking2.jpg");
     background-size: 100%;
 }
 
@@ -125,6 +129,11 @@ background-size: 100%;
     margin: 30px 30px 95px 30px;
     padding-left: 3%;
     padding-right: 3%;
+    
+}
+
+h5 {
+    font-size: 1.2rem;
 }
 
 .trails{
@@ -143,7 +152,7 @@ background-size: 100%;
     cursor: pointer;
     background-color: white;
     text-align: center;
-    margin: 0px 30px 75px 30px;
+    margin: 0px 20px 75px 20px;
 }
 
 .trails:hover{

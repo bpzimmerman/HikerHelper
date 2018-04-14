@@ -59,6 +59,9 @@
             <div class="form-row align-items-center">
               <div class="col-auto">
                 <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Location">
+                <div class="invalid-feedback">
+                  Please enter a location.
+                </div>
               </div>
               <div class="col-auto">
                 <button type="submit" class="btn btn-primary mb-2" id="searchButton">Search</button>
@@ -138,7 +141,7 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body" id="moreInfo-Body">
           <img src="">
           <p>Modal body text goes here.</p>
         </div>
@@ -146,7 +149,7 @@
           <button type="button" class="btn btn-secondary" id="save-act" data-dismiss="modal" aria-label="Save Activity">
             <span aria-hidden="true">Save Activity</span>
           </button>
-          <button type="button" class="btn btn-primary" id = "bookTrip" data-dismiss="modal" aria-label="Save Activity">
+          <button type="button" class="btn btn-primary" id = "bookTrip" data-dismiss="modal" aria-label="Book Trip">
             <span aria-hidden="true">Book Trip (Find airport)</span>
           </button>
         </div>
@@ -234,6 +237,28 @@
           <!-- <button id="signup" type="submit" class="btn btn-primary">Sign Up</button> -->
         <!-- </div> -->
       <!-- </form> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- No trails modal -->
+  <div class="modal" id="no-trails">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="no-trails-title">No Trails Found</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>We were not able to find any trails that matched your criteria. Please broaden your search and try again.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Done">
+            <span aria-hidden="true">Done</span>
+          </button>
+        </div>
       </div>
     </div>
   </div>
