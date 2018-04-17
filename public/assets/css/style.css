@@ -262,4 +262,8 @@ h5 {
         font-weight: bold;
         color: #E95420;
     }
+
+    #signInLink button{
+        color: white;
+    }    
 }
