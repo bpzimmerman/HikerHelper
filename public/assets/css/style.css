@@ -21,8 +21,10 @@ body{
     height: 93vh;
 }
 
-.mainNavBar,
-#footer{height: 7vh;}
+.mainNavBar, #footer{
+    height: 7vh;
+    z-index: 10;
+}
 
 #signInLink{
 position: absolute;
@@ -249,4 +251,15 @@ h5 {
 
 .modal-body{
     box-shadow: #E95420;
+}
+
+@media screen and (max-width: 991px) {
+    #signInLink {
+        position: inherit
+    }
+
+    .navbar-dark .navbar-nav .nav-link{
+        font-weight: bold;
+        color: #E95420;
+    }
 }

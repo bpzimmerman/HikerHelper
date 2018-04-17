@@ -42,10 +42,10 @@ $(document).ready(function(){
       var hikeDiff = { green: "Easy", greenBlue: "Kinda Easy", blue: "Intermediate", blueBlack: "Kinda Hard", black: "Hard", dblack: "Very Hard" };
       if (data.Activities.length > 0){
         subList = $("<li>");
-        subList.attr("class", "saves clearfix");
+        subList.attr("class", "saves");
         data.Activities.forEach(function(item){
           actDiv = $("<div>");
-          actDiv.attr("class", "trails clearfix")
+          actDiv.attr("class", "trails")
                 .attr("data-actNum", item.activityNum)
                 .attr("data-actName", item.name)
                 .attr("data-actDiff", item.difficulty)
